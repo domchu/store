@@ -5,9 +5,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: cursive;
-  scroll-behavior: smooth;
 }
 .header {
   display: grid;
@@ -196,7 +198,6 @@ body {
 }
 .input-text {
   text-align: center;
-  margin: auto;
   width: 80%;
 }
 .text {
@@ -214,7 +215,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   width: 80%;
-  padding: 70px;
+  padding-top: 70px;
   text-align: center;
   margin: auto;
 }
@@ -279,12 +280,21 @@ body {
   margin: 10px;
 }
 // the media query part of the project
+@media screen and (max-width: 1144px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    column-gap: 20px;
+  }
+}
 @media screen and(max-width:900px) {
   .image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    align-items: center;
     margin: auto;
+    column-gap: 40px;
   }
   .about {
     display: block;
@@ -293,8 +303,14 @@ body {
     margin-left: 180px;
     margin-top: 40px;
   }
-  .image {
-    margin: 20px;
+  .store {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    // font-size: 50px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -414,14 +430,26 @@ body {
     margin-top: 25px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-wifth: 700px) {
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 550px) {
   .image-gallery {
-    display: block;
-    justify-content: center;
-    margin: auto;
-    padding: 5px 1px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    // display: block;
+    // justify-content: center;
+    // margin: auto;
+    // padding: 5px 1px 0 0;
   }
   .about-img {
     text-align: center;
@@ -441,11 +469,9 @@ body {
     text-align: center;
     margin: auto;
   }
-  .cake {
-    width: 80%;
-    margin: 10px;
-    text-align: center;
-    margin: auto;
+  .image {
+    width: 300px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 380px) {
