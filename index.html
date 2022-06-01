@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORE----Responsive Javascript Filter</title>
+    <link
+      rel="stylesheet"
+      href="fontawesome5/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg" class="logo-img" />
+      </div>
+      <nav class="navlink">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#store">Store</a></li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <div class="icon">
+          <strong
+            ><i class="fas fa-phone"></i><span>+234 8137707936</span></strong
+          >
+        </div>
+        <div class="icon cart">
+          <strong
+            ><i class="fas fa-shopping-cart"></i
+            ><span>2 Items-$10.59</span></strong
+          >
+        </div>
+      </div>
+      <i class="fa fa-bars bars"></i>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#store">Store</a></li>
+      </ul>
+    </div>
+    <!-- The background part of the project--------------------------------------- -->
+    <div class="banner">
+      <div class="banner-text">
+        <h2>
+          Welcome to
+          <span style="color: brown; font-family: cursive; font-size: 60px"
+            >Grandma's</span
+          >
+        </h2>
+        <a class="btnx" href="#store" id="btnm">EXPLORE</a>
+      </div>
+    </div>
+    <!-- The about us part of the project --------------------------------------------- -->
+    <div class="about" id="about">
+      <div class="about-text">
+        <h2>About <span style="color: brown; font-size: 90px">Us</span></h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
+          voluptate sequi error totam ipsum nesciunt minus esse repellendus
+          soluta tempora?Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Error, molestias?
+          <a class="btnx" href="tel:+234 8137707936">EXPLORE</a>
+        </p>
+      </div>
+      <div class="about-us-img">
+        <div class="about-us-text">
+          <img src="images/sweets-1.jpeg" class="about-img" />
+        </div>
+      </div>
+    </div>
+    <!-- Our store part of the prject--------------------------------------- -->
+    <div class="our-store" id="store">
+      <h2>Our <span style="color: brown">STores</span></h2>
+      <ul class="store">
+        <li><a class="btn btnx" href="#" data-filter="all">All</a></li>
+        <li><a class="btn btnx" href="#" data-filter="Cakes">Cakes</a></li>
+        <li>
+          <a class="btn btnx" href="#" data-filter="Cupcakes">Cupcakes</a>
+        </li>
+        <li><a class="btn btnx" href="#" data-filter="Sweets">Sweets</a></li>
+        <li>
+          <a class="btn btnx" href="#" data-filter="Doughnuts">Doughnuts</a>
+        </li>
+      </ul>
+      <div class="input-text" id="search-item">
+        <span><i class="fa fa-search search"></i></span>
+        <input type="search" placeholder="search......." class="text" />
+      </div>
+
+      <!-- The image gallery part of the project --------------------------------- -->
+      <h2 class="error-text"></h2>
+      <div class="image-gallery" id="storeItems">
+        <!-- the middle class name must start with the capital letter while the name of the item with the samll letter -->
+        <div class="image Sweets store-item">
+          <img src="images/sweets-1.jpeg" class="imge" />
+          <div class="name-price"><span>sweet Item</span><span>$5</span></div>
+        </div>
+        <div class="image Cakes store-item">
+          <img src="images/cake-1.jpeg" class="imge" />
+          <div class="name-price"><span>cake</span><span>$5</span></div>
+        </div>
+        <div class="image Sweets store-item">
+          <img src="images/sweets-2.jpeg" class="imge" />
+          <div class="name-price"><span>sweet</span><span>$5</span></div>
+        </div>
+        <div class="image Doughnuts store-item">
+          <img src="images/doughnut-1.jpeg" class="imge" />
+          <div class="name-price">
+            <span>doughnut Item</span><span>$5</span>
+          </div>
+        </div>
+        <div class="image Sweets store-item">
+          <img src="images/sweets-3.jpeg" class="imge" />
+          <div class="name-price"><span>sweet Item</span><span>$10</span></div>
+        </div>
+        <div class="image Cakes store-item">
+          <img src="images/cake-3.jpeg" class="imge" />
+          <div class="name-price"><span>cake Item</span><span>$10</span></div>
+        </div>
+        <div class="image Cupcakes store-item">
+          <img src="images/cupcake-1.jpeg" class="imge" />
+          <div class="name-price"><span>cupcake</span><span>$15</span></div>
+        </div>
+        <div class="image Doughnuts store-item">
+          <img src="images/doughnut-2.jpeg" class="imge" />
+          <div class="name-price">
+            <span>doughnut Item</span><span>$10</span>
+          </div>
+        </div>
+        <div class="image Cakes store-item">
+          <img src="images/z-cake-2.jpeg" class="imge" />
+          <div class="name-price"><span>cake Item</span><span>$10</span></div>
+        </div>
+        <div class="image Cupcakes store-item">
+          <img src="images/cupcake-2.jpeg" class="imge" />
+          <div class="name-price"><span>cupcake</span><span>$15</span></div>
+        </div>
+        <div class="image Cupcakes store-item">
+          <img src="images/cupcake-3.jpeg" class="imge" />
+          <div class="name-price"><span>cupcake</span><span>$15</span></div>
+        </div>
+        <div class="image Doughnuts store-item">
+          <img src="images/z-sweets-3.jpeg" class="imge" />
+          <div class="name-price">
+            <span>doughnut Item</span><span>$15</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
